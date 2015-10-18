@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def json_parsing():
-    access_token = '36936465.1fb234f.755362de76fc4c63a6f8932fb315a011'
+    access_token = 'YOUR-ACCESS-TOKEN'
     instagram_url = 'https://api.instagram.com/v1/media/search?access_token='+access_token+'&lat=38.2248929&lng=21.7253226&distance=5000'
     instagram_response = urllib.request.urlopen(instagram_url)
     instagram_data = json.loads(instagram_response.read().decode('utf-8'))
