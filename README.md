@@ -6,4 +6,4 @@ A simple screenshot
 
 
 Inline-style: 
-![alt text](https://github.com/paggel/PatrasCarousel/blob/master/Screenshot%20.png "Logo Title Text 1")
+![alt text](https://github.com/paggel/PatrasCarousel/blob/master/Screenshot.png "Logo Title Text 1")
