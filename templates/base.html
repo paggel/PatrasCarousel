@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <script type="text/javascript" src="https://bootswatch.com/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="https://bootswatch.com/journal/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Patras Carousel</a>
+        <a class="navbar-brand" href="https://github.com">Github Code</a>
+    </div>
+  </div>
+</nav>
+
+    <div class="alert alert-dismissible alert-info">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <h4>Ενημέρωση!</h4>
+        <p>Οι προβαλόμενες φωτογραφίες αποτελούν υλικό που έχει ανακτυθεί μέσω του instagram api. <a href="https://instagram.com/developer" >Info</a></p>
+    </div>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
